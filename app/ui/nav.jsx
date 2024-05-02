@@ -1,11 +1,11 @@
 'use client'
 
-import Button from "./button";
-import Link from 'next/link';
+import clsx from 'clsx';
 import gsap from 'gsap';
-import { useEffect, useRef, useState } from "react";
+import Link from 'next/link';
+import Button from "./button";
 import Power3 from 'gsap/dist/gsap';
-import clsx from 'clsx'
+import { useEffect, useRef, useState } from "react";
 
 export default function Nav() {
   const navRef = useRef(null);

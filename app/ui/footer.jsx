@@ -20,13 +20,12 @@ export default function Footer() {
   })
 
   return (
-    <nav ref={containerRef} className={clsx("w-[80%] flex items-center justify-between p-3 my-4 z-50 rounded-full")}>
+    <nav ref={containerRef} className={clsx("w-[80%] flex flex-col lg:flex-row items-center justify-between p-3 my-4 z-50 rounded-full gap-8 lg:gap-0")}>
       <h1 className="text-4xl">gch</h1>
-      <div className="flex space-x-8 ml-24 font-light">
-        <Link href="/" className='text-[#918D8B] transition-colors duration-150 ease-in-out hover:text-[#F0EBE8]'>Servicios</Link>
-        <Link href="/about" className='text-[#918D8B] transition-colors duration-150 ease-in-out hover:text-[#F0EBE8]'>Proyectos</Link>
-        <Link href="/about" className='text-[#918D8B] transition-colors duration-150 ease-in-out hover:text-[#F0EBE8]'>Planes</Link>
-        <Link href="/contact" className='text-[#918D8B] transition-colors duration-150 ease-in-out hover:text-[#F0EBE8]'>Acerca de</Link>
+      <div className="flex space-x-8 lg:ml-24 font-light items-center">
+        <Link href="/" className='text-[#918D8B] transition-colors duration-150 ease-in-out hover:text-[#F0EBE8]'>Contacto</Link>
+        <Link href="/about" className='text-[#918D8B] transition-colors duration-150 ease-in-out hover:text-[#F0EBE8] text-center'>Políticas de privacidad</Link>
+        <Link href="/about" className='text-[#918D8B] transition-colors duration-150 ease-in-out hover:text-[#F0EBE8] text-center'>Términos y condiciones</Link>
       </div>
 
       <div className='flex gap-1'>

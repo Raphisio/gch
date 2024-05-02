@@ -22,17 +22,17 @@ export const chooseUs = [
 
 export const dontChooseUs = [
   {
-    icon: '/images/landing/4.png',
+    icon: '/icon/bug.svg',
     title: 'Diseños genéricos',
     description: 'Conformarse con plantillas poco inspiradas y no lograr diferenciar su marca del mercado.'
   },
   {
-    icon: '/images/landing/5.png',
+    icon: '/icon/no-entry.svg',
     title: 'Instalaciones a medias',
     description: 'Posibles fallas y necesidades de servicios técnicos haciendo tu negocio dificil de mantener.'
   },
   {
-    icon: '/images/landing/6.png',
+    icon: '/icon/comment-question.svg',
     title: 'Soporte inadecuado',
     description: 'Asistencia dedicada durante y después de la finalización del proyecto.'
   }
@@ -41,79 +41,73 @@ export const dontChooseUs = [
 // Servicios
 export const services = [
   {
-    icon: "",
+    icon: "/icon/browser.svg",
     title: 'Desarrollo web',
     description: 'Desarrollamos sitios web a la medida de tus necesidades, con diseños únicos y funcionales.',
     category: 'Software'
   },
   {
-    icon: "",
+    icon: "/icon/mobile.svg",
     title: 'Aplicaciones móviles',
     description: 'Desarrollamos aplicaciones móviles para Android y iOS, con diseños únicos y funcionales.',
     category: 'Software'
   },
   {
-    icon: "",
+    icon: "/icon/store.svg",
     title: 'Tiendas en línea',
     description: 'Desarrollamos tiendas en línea a la medida de tus necesidades, con diseños únicos y funcionales.',
     category: 'Software'
   },
   {
-    icon: "",
+    icon: "/icon/parcel.svg",
     title: 'Sistemas de inventario',
     description: 'Desarrollamos sistemas de inventario a la medida de tus necesidades, con diseños únicos y funcionales.',
     category: 'Software'
   },
   {
-    icon: "",
+    icon: "/icon/bill.svg",
     title: 'Instalación de POS',
     description: 'Instalamos y configuramos sistemas de punto de venta para tu negocio.',
     category: 'Instalaciones'
   },
   {
-    icon: "",
+    icon: "/icon/webcam.svg",
     title: 'Instalación de cámaras',
     description: 'Instalamos y configuramos sistemas de cámaras de seguridad para tu negocio u hogar.',
     category: 'Instalaciones'
   },
   {
-    icon: "",
-    title: "Sistemas de pantallas",
-    description: "Instalamos y configuramos sistemas de pantallas para tu negocio.",
-    category: "Instalaciones"
-  },
-  {
-    icon: "",
+    icon: "/icon/weight.svg",
     title: "Básculas",
     description: "Instalamos y configuramos básculas para tu negocio.",
     category: "Instalaciones"
   },
   {
-    icon: "",
+    icon: "/icon/screw.svg",
     title: "Mantenimiento preventivo",
     description: "Realizamos mantenimiento preventivo a tus sistemas para evitar fallas.",
     category: "Servicio técnico"
   },
   {
-    icon: "",
+    icon: "/icon/download.svg",
     title: "Instalación de programas",
     description: "Instalamos y configuramos programas para tu negocio.",
     category: "Servicio técnico"
   },
   {
-    icon: "",
+    icon: "/icon/sync-exclamation.svg",
     title: "Actualización de hardware",
     description: "Actualizamos tu hardware para que tu negocio funcione de manera óptima.",
     category: "Servicio técnico"
   }, 
   {
-    icon: "",
+    icon: "/icon/diagnostic.svg",
     title: "Diagnóstico técnico especializado",
     description: "Realizamos diagnósticos especializados para tus sistemas.",
     category: "Servicio técnico"
   },
   {
-    icon: "",
+    icon: "/icon/desktop.svg",
     title: "Ensamble de equipos",
     description: "Ensamblamos equipos a la medida de tus necesidades.",
     category: "Servicio técnico"

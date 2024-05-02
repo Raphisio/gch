@@ -2,7 +2,7 @@
 import clsx from 'clsx';
 import { gsap } from 'gsap';
 import Button from './button';
-import { Times } from './icon';
+import Image from 'next/image';
 import { questions } from '@/app/questions';
 import { useEffect, useRef, useState } from 'react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -33,9 +33,9 @@ function Question({ question, answer, isOpen, handleOpen }) {
     })}>
       <button className="w-full flex justify-between items-center" onClick={handleOpen}>
         <h4 className="text-xl font-light">{question}</h4>
-        <Times className={clsx("rotate-45 size-6 transition duration-300 ease-in-out", {
+        <Image className={clsx("rotate-45 size-6 transition duration-300 ease-in-out", {
           'rotate-180': isOpen
-        })} color="white" />
+        })} color="white" width={0} height={0} alt='Plus icon' />
       </button>
       <p className={clsx("w-full flex justify-between text-[#979797] items-center transition-all duration-500 ease-in-out", {
         'max-h-0 overflow-x-hidden opacity-0': !isOpen,
@@ -89,7 +89,7 @@ function MoreHelp() {
       <p ref={subtitleRef} className='font-light'>
         Para cualquier consulta, estaremos encantados de responder a tus preguntas relacionadas con nuestros servicios y/o productos. Contáctanos en cualquiera de nuestras redes.
       </p>
-      <div className='w-full flex gap-4 justify-center mt-8'>
+      <div className='w-full flex flex-wrap gap-4 justify-center mt-8'>
         <Button href="#" style="secondary">Facebook</Button>
         <Button href="#" style="secondary">Instagram</Button>
         <Button href="#" style="secondary">WhatsApp</Button>

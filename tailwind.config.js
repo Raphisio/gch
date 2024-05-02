@@ -12,6 +12,7 @@ module.exports = {
         'very-dark': 'var(--very-dark)',
         'dark': 'var(--dark)',
         'other-dark': 'var(--other-dark)',
+        'light-yellow': 'var(--light-yellow)',
       },
     },
   },

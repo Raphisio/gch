@@ -1,5 +1,6 @@
 'use client'
 import { gsap } from 'gsap';
+import Image from "next/image";
 import { useEffect, useRef } from 'react';
 
 export default function Cards() {
@@ -18,9 +19,9 @@ export default function Cards() {
   })
 
   return (
-    <div className="absolute -right-40 mt-14">
+    <div className="absolute -right-40 mt-14 hidden lg:block">
         <div ref={cardRef} className="absolute -right-16 top-10 z-[3] bg-zinc-900 size-[700px] rounded-2xl overflow-hidden border-[8px] border-zinc-900">
-          <img src="/images/hibernum.png" alt="Hibernum" className="object-fit opacity-70" />
+          <Image src="/images/hibernum.png" alt="Hibernum" className="object-fit opacity-70" width={0} height={0} />
         </div>
     </div>
   )

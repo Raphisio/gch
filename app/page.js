@@ -1,12 +1,12 @@
 'use client'
-import Button from "./ui/button";
-import Cards from "./ui/cards";
-import { Arrow } from "./ui/icon";
 import gsap from 'gsap';
-import { useEffect, useRef } from 'react';
-import ChooseUs from "./ui/chooseUs";
 import Faq from "./ui/faq";
+import Cards from "./ui/cards";
+import Image from "next/image";
+import Button from "./ui/button";
+import ChooseUs from "./ui/chooseUs";
 import Services from "./ui/services";
+import { useEffect, useRef } from 'react';
 
 export default function Home() {
   const titleRef = useRef(null);
@@ -69,7 +69,7 @@ export default function Home() {
         <div className="w-3/5 mt-20 mb-20">
           <h1 ref={titleRef} className="font-semibold text-6xl">En global code harbor
             <div className="relative mb-20">
-              <span ref={span1Ref} className="text-carrot absolute opacity-0">   creamos</span>
+              <span ref={span1Ref} className="text-carrot absolute opacity-0"> creamos</span>
               <span ref={span2Ref} className="text-carrot absolute opacity-0"> diseñamos</span>
               <span ref={span3Ref} className="text-carrot absolute opacity-0"> innovamos</span>
             </div>
@@ -87,7 +87,7 @@ export default function Home() {
             <Button style="primary" className="px-8 py-5 mt-14 flex items-center justify-center gap-2 text-xl" type="withIcon">
               Realiza tu proyecto
               <div className="w-[1px] h-[16px] bg-very-dark"></div>
-              <Arrow color="var(--very-dark)" className="size-8"/>
+              <Image src="/icon/arrow.svg" width={0} height={0} alt="Arrow icon" />
             </Button>
           </div>
         </div>

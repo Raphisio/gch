@@ -10,14 +10,14 @@ export default function Card ({ icon, title, description, type = "default", inde
 
   useEffect(() => {
     gsap.fromTo(cardRef.current,
-      { opacity: 0, x: 100 },
-      { opacity: 1, x: 0, duration: 1, scrollTrigger: {
+      { opacity: 0, x: 50 },
+      { opacity: 1, x: 0, duration: .5, scrollTrigger: {
         trigger: cardRef.current,
         start: "-40% 45%",
         toggleActions: "play none none none"
-      }, delay: index * 0.5}
+      }, delay: index * 0.3}
     )
-  }, [])
+  }, [index])
 
   return (
     <div ref={cardRef} className={clsx("min-w-[277px] max-w-[277px] rounded-2xl p-6", {
